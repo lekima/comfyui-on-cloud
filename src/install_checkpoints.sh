@@ -20,32 +20,13 @@ wget https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/v1-5-pruned
 # v1-5-pruned-emaonly
 wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors -P ./models/checkpoints/
 
-# realisticVisionV51_v51VAE
-wget https://huggingface.co/frankjoshua/realisticVisionV51_v51VAE/resolve/main/realisticVisionV51_v51VAE.safetensors -P ./models/checkpoints/
-
-# turbovision xl
-wget https://huggingface.co/akshitapps/TurboVisionXL/resolve/main/turbovisionxlSuperFastXLBasedOnNew_tvxlV431Bakedvae.safetensors -P ./models/checkpoints/
-
-# Absolute Reality 1.8.1
-wget https://huggingface.co/digiplay/AbsoluteReality_v1.8.1/resolve/main/absolutereality_v181.safetensors -P ./models/checkpoints/
-
-# Absolute Reality 1.8.1.INPAINTING
-#wget https://civitai.com/api/download/models/134084 --content-disposition -P ./models/checkpoints/
 
 # dreamshaper 8
-wget https://huggingface.co/autismanon/modeldump/resolve/main/dreamshaper_8.safetensors -P ./models/checkpoints/
+wget https://huggingface.co/Lykon/DreamShaper/blob/main/DreamShaper8_LCM.safetensors -P ./models/checkpoints/
 
-# dreamshaper xl
-wget https://civitai.com/api/download/models/251662 --content-disposition -P ./models/checkpoints/
+# dreamshaper-xl-v2-turbo
+wget https://huggingface.co/Lykon/dreamshaper-xl-v2-turbo/blob/main/DreamShaperXL_Turbo_v2_1.safetensors -P ./models/checkpoints/
 
-# epiCPhotoGasm-X photoreal
-wget https://civitai.com/api/download/models/132632 --content-disposition -P ./models/checkpoints/
-
-# perfectdeliberate
-#wget https://civitai.com/api/download/models/253055 --content-disposition -P ./models/checkpoints/
-
-#epicrealism naturalSin
-#wget https://huggingface.co/misri/epicrealism_naturalSin/resolve/main/epicrealism_naturalSin.safetensors -P ./models/checkpoints/
 
 # ipadapters
 wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors -P ./models/ipadapter/
@@ -53,6 +34,7 @@ wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-f
 wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors -P ./models/ipadapter/
 wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors -P ./models/ipadapter/
 wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors -P ./models/clip_vision/
+
 
 # ControlNets
 wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11e_sd15_ip2p_fp16.safetensors -P ./models/controlnet/
@@ -77,9 +59,11 @@ wget https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/reso
 #wget https://huggingface.co/stabilityai/control-lora/resolve/main/control-LoRAs-rank256/control-lora-sketch-rank256.safetensors -P ./models/controlnet/
 #wget -O ./models/controlnet/depth-sdxl-1.0-diffusion_pytorch_model.bin https://huggingface.co/diffusers/controlnet-depth-sdxl-1.0-mid/resolve/main/diffusion_pytorch_model.bin
 
+
 #vae
 wget https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.ckpt -P ./models/vae/
 #wget -O ./models/controlnet/vae_sdxl-1.0-inpainting-0.1.safetensors https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1/resolve/main/vae/diffusion_pytorch_model.safetensors
+
 
  # clip vision
 ## SDXL
@@ -88,28 +72,5 @@ wget https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-
 wget -O  ./models/clip_vision/SD15_CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors   https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors
 
 
-
 # upscaler
 wget https://huggingface.co/uwg/upscaler/resolve/main/ESRGAN/4x_NickelbackFS_72000_G.pth -P  ./models/upscale_models
-# segment anything
-## GroundingDINO_SwinT_OGC
-#wget https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/GroundingDINO_SwinT_OGC.cfg.py -P ./models/grounding-dino/
-#wget https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/groundingdino_swint_ogc.pth  -P ./models/grounding-dino/
-##GroundingDINO_SwinB
-#wget https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/GroundingDINO_SwinB.cfg.py -P ./models/grounding-dino/
-#wget https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/groundingdino_swinb_cogcoor.pth -P ./models/grounding-dino/
-#
-###sam_vit_h
-#wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -P ./models/sams/
-####sam_vit_l
-#wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth -P ./models/sams/
-####  sam_vit_b
-#wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth -P ./models/sams/
-#### sam_hq_vit_h
-#wget https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_h.pth -P ./models/sams/
-#### sam_hq_vit_l
-#wget https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_l.pth -P ./models/sams/
-####sam_hq_vit_b
-#wget https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_b.pth -P ./models/sams/
-####mobile_sam
-#wget https://github.com/ChaoningZhang/MobileSAM/blob/master/weights/mobile_sam.pt -P ./models/sams/
