@@ -21,6 +21,9 @@ wget https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/v1-5-pruned
 wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors -P ./models/checkpoints/
 
 
+# realisticVisionV51_v51VAE
+wget https://huggingface.co/frankjoshua/realisticVisionV51_v51VAE/resolve/main/realisticVisionV51_v51VAE.safetensors -P ./models/checkpoints/
+
 # dreamshaper 8
 wget https://huggingface.co/Lykon/DreamShaper/blob/main/DreamShaper8_LCM.safetensors -P ./models/checkpoints/
 
