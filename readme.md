@@ -36,7 +36,7 @@ Normally, a full month's usage of a T4 GPU with 6 VCPU cores, 16 GB RAM, and 100
 2. Log in to your VM and execute the following commands:
 
     ```bash
-    git clone https://github.com/karaposu/comfyui-on-cloud
+    git clone https://github.com/lekima/comfyui-on-cloud
     chmod +x ./comfyui-on-cloud/src/install.sh
     chmod +x ./comfyui-on-cloud/src/virgin_vm.sh
   
@@ -171,7 +171,7 @@ Feel free to inspect all files or ask for clarification to ensure safety and sug
 2. Clone the repo for ComfyUI installation scripts and execute them:
 
     ```bash
-    git clone https://github.com/karaposu/comfyui-on-cloud
+    git clone https://github.com/lekima/comfyui-on-cloud
     chmod +x ./comfyui-on-cloud/src/install.sh
     chmod +x ./comfyui-on-cloud/src/virgin_vm.sh
   
