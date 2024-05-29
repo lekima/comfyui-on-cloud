@@ -26,30 +26,22 @@ chmod +x install_comfyui.sh
 ./install_comfyui.sh
 
 echo " "
-echo " ---------------- comfyui installed "
+echo " ---------------- ComfyUI installed "
 echo " "
 
-cp comfyui-on-cloud/src/install_extensions.sh ComfyUI
-cp comfyui-on-cloud/src/install_checkpoints.sh ComfyUI
+cp comfyui-on-cloud/src/install_comfyui_manager.sh ComfyUI
 
 echo " "
-echo " ---------------- automation scripts copied to comfyui directory "
+echo " ---------------- Automation scripts copied to ComfyUI directory "
 echo " "
 
 cd ComfyUI
 
-chmod +x install_extensions.sh
-chmod +x install_checkpoints.sh
-./install_extensions.sh
+chmod +x install_comfyui_manager.sh
+./install_comfyui_manager.sh
 
 echo " "
-echo " ---------------- extensions installed "
-echo " "
-./install_checkpoints.sh
-#./install_checkpoints_big.sh
-
-echo " "
-echo " ---------------- checkpoints installed "
+echo " ---------------- ComfyUI Manager installed "
 echo " "
 
 
