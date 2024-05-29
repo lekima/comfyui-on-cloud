@@ -45,7 +45,7 @@ Normally, a full month's usage of a T4 GPU with 6 VCPU cores, 16 GB RAM, and 100
     ./comfyui-on-cloud/src/install.sh
     ```
 
-    This will set up comfyUI, install popular extensions and model checkpoints, and include an automation script that automatically starts the comfyvm server whenever the VM is booted.
+    This will set up ComfyUI and ComfyUI Manager, then include an automation script that automatically starts the comfyvm server whenever the VM is booted.
 
 
 ## How to Use?<a name="usage"></a>
@@ -103,8 +103,7 @@ Feel free to inspect all files or ask for clarification to ensure safety and sug
 
 - **Installer:** `install.sh` script manages the installation and setup process.
 - **Installer for Official ComfyUI repo:** `install_comfyui.sh`
-- **Checkpoint Installer:** `install_checkpoints.sh`
-- **Extensions Installer:** `install_extension.sh`
+- **ComfyUI Manager Installer:** `install_comfyui_manager.sh`
 - **We are also dynamically creating `run_the_server.sh`** file and adding it to the systemd services to ensure comfyUI starts on boot: `/etc/systemd/system/comfyui.service`
 
 ## Detailed Tutorial   <a name="instructions_details"></a>
